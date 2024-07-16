@@ -1,6 +1,6 @@
 import puppeteer from "@cloudflare/puppeteer";
 
-export async function getBrowser(env) {
+async function getBrowser(env) {
   let browserWorker = env.BROWSER_WORKER;
 
   let retries = 3;
@@ -29,7 +29,7 @@ export async function getBrowser(env) {
   throw new Error("Unable to start browser instance");
 }
 
-export async function ingest(url, browser) {
+async function ingest(url, browser) {
   let page = null;
   try {
     page = await browser.newPage();
