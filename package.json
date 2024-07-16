@@ -1,0 +1,14 @@
+{
+  "name": "keep_alive_test",
+  "version": "0.1.0",
+  "private": true,
+  "sideEffects": false,
+  "type": "module",
+  "scripts": {
+    "deploy": "wrangler deploy --minify"
+  },
+  "dependencies": {
+    "wrangler": "^3.65.0",
+    "@cloudflare/puppeteer": "^0.0.11"
+  }
+}

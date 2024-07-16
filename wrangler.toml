@@ -1,0 +1,7 @@
+name = "keep-alive-test"
+main = "worker.js"
+compatibility_flags = ["nodejs_compat"]
+compatibility_date = "2024-06-03"
+
+browser = { binding = "BROWSER_WORKER" }
+triggers.crons = ["*/5 * * * *"]
